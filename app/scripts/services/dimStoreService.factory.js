@@ -708,7 +708,8 @@
         trackable: currentBucket.inProgress && currentBucket.hash !== 375726501,
         tracked: item.state === 2,
         locked: item.locked,
-        classified: itemDef.redacted
+        classified: itemDef.redacted,
+        isInLoadout: false
       });
 
       createdItem.index = createItemIndex(createdItem);
